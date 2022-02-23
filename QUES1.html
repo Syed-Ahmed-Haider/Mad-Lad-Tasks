@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+        <script>
+function kthDigitFromLast(n, k)
+{
+    if (k <= 0)
+    {
+        document.write(-1);
+        return;
+    }
+    var temp = String(n);
+    if (k > temp.length)
+    {
+        document.write(-1);
+    }
+    else
+    {
+        var req = temp.charAt(temp.length - k)
+        document.write(Number(req));
+    }
+}
+var n = 2354;
+var k = 2;
+kthDigitFromLast(n, k);
+</script>
+</body>
+     </html>
+ 

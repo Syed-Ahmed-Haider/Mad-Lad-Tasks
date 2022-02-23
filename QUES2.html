@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+        <script>
+ 
+            function getSum(n)
+            {
+                var sum = 0;
+                while (n != 0) {
+                    sum = sum + n % 10;
+                    n = parseInt(n / 10);
+                }
+                console.log(sum);
+            }
+             
+
+            var n = 687;
+            document.write(getSum(n));
+
+             
+            </script>
+
+    </body>
+</html>
